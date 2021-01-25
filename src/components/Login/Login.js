@@ -1,23 +1,35 @@
-import React from "react";
-import { Box, Button } from "grommet";
-import "./Login.css";
+import React from 'react';
+import { Box, Button, TextInput, Heading } from 'grommet';
+import './Login.css';
 
 function Login() {
   return (
     <Box
       tag="section"
-      direction="column"
       align="center"
       justify="center"
-      background="brand"
-      animation={{ type: "slideUp", duration: 1000 }}
-      pad={{ left: "medium", right: "small", vertical: "small" }}
-      style={{ zIndex: "1" }}
-      fill="vertical"
+      animation={{ type: 'fadeIn', duration: 2000 }}
+      pad={{top: 'xlarge'}}
+      style={{ zIndex: '1' }}
+      width="medium"
     >
-      <h2 className="login__title">Please enter your keyword</h2>
-      <input className="login__input"></input>
-      <Button className="button">Submit</Button>
+      <Heading
+        level='2'
+        textAlign="center"
+      >
+        Please enter your keyword
+      </Heading>
+      <TextInput
+        placeholder="Keyword"
+        textAlign="center"
+      />
+      <Button
+        primary
+        label="Login"
+        type="submit"
+        margin={{top: 'small'}}
+
+      />
     </Box>
   );
 }

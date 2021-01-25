@@ -1,25 +1,11 @@
-import React from "react";
-import { Grommet } from "grommet";
-import ReactDOM from "react-dom";
-import "./index.css";
-import App from "./components/App/App";
-
-const theme = {
-  global: {
-    font: {
-      family: "Halant",
-      size: "18px",
-      height: "20px",
-    },
-  },
-};
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './components/App/App';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Grommet theme={theme}>
-      <App />
-    </Grommet>
+    <App />
   </React.StrictMode>,
-  // eslint-disable-next-line no-undef
-  document.getElementById("root")
+  document.getElementById('root')
 );
